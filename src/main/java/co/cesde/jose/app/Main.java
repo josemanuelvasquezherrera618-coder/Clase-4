@@ -16,9 +16,13 @@ public class Main {
         person3.setFirstName("Juan");
         person3.getFirstName();
 
-        person.setFirstName("Jose");
-        person.getFirstName();
+
         Person person4 = new Person(1L, "001", "123456789", "Jose", "Perez","vasquez@gmail.com", true);
+        person.getFirstName();
+
+        System .out.println(person.toString());
+
+
     }
 
 }

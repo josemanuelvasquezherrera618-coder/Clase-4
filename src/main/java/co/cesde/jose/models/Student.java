@@ -20,4 +20,10 @@ public class Student extends Person {
     public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
+
+    @Override
+    public String toString() {
+        return "Student = " + super.toString() +
+               "birthDate='" + birthDate + '\'';
+    }
 }
