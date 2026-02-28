@@ -1,6 +1,8 @@
 package co.cesde.jose.app;
 
 import co.cesde.jose.models.Person;
+import co.cesde.jose.models.Student;
+import co.cesde.jose.models.Teacher;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +22,25 @@ public class Main {
         Person person4 = new Person(1L, "001", "123456789", "Jose", "Perez","vasquez@gmail.com", true);
         person.getFirstName();
 
-        System .out.println(person.toString());
+        System.out.println(person.toString());
+        System.out.println(person2.toString());
+        System.out.println(person3.toString());
+        System.out.println(person4.toString());
 
+        Student student = new Student();
+        student.setFirstName("Carlos");
+        student.setBirthDate("01/01/2000");
+        System.out.println(student.toString());
 
+        Teacher teacher = new Teacher();
+        teacher.setFirstName("Ana");
+        System.out.println(teacher.toString());
+
+        Student student2 = new Student(2L, "002", "987654321", "Maria", "Gomez","vasquez@.com", true, "02/02/2001");
+        System.out.println(student2.toString());
+
+        Student teacher2 = new Teacher(3L, "003", "456789123", "Juan", "Lopez","vasquez@.com", true, "Ingeniero");
+        System.out.println(teacher2.toString());
     }
 
 }
