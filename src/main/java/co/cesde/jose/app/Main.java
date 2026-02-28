@@ -39,7 +39,7 @@ public class Main {
         Student student2 = new Student(2L, "002", "987654321", "Maria", "Gomez","vasquez@.com", true, "02/02/2001");
         System.out.println(student2.toString());
 
-        Student teacher2 = new Teacher(3L, "003", "456789123", "Juan", "Lopez","vasquez@.com", true, "Ingeniero");
+        Teacher teacher2 = new Teacher(3L, "003", "456789123", "Juan", "Lopez","vasquez@.com", true, "Ingeniero");
         System.out.println(teacher2.toString());
     }
 
