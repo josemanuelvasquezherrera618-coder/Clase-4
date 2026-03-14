@@ -1,19 +1,18 @@
 package co.cesde.jose.models;
 
-public class Person {
+public abstract class Persons {
+    protected Long userId;
+    protected String code;
+    protected String documentNumber;
+    protected String firstName;
+    protected String lastName;
+    protected String email;
+    protected Boolean status;
 
-    private Long userId;
-    private String code;
-    private String documentNumber;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private Boolean status;
-
-    public Person() {
+    protected Person() {
     }
 
-    public Person(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status) {
+    protected Person(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status) {
         this.userId = userId;
         this.code = code;
         this.documentNumber = documentNumber;
@@ -22,6 +21,10 @@ public class Person {
         this.email = email;
         this.status = status;
     }
+
+    @Override
+    public abstract String getRole();
+    return "";
 
     public Long getUserId() {
         return userId;
@@ -34,7 +37,6 @@ public class Person {
     public String getDocumentNumber() {
         return documentNumber;
     }
-
     public String getFirstName() {
         return firstName;
     }

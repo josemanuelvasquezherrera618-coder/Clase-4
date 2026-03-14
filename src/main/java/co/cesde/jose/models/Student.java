@@ -1,11 +1,14 @@
 package co.cesde.jose.models;
 
-public class Student extends Person {
+public class Student extends Persons {
 
-    private String birthDate;
+    private long studenId;
+    protected String birthDate;
 
     public Student() {
         super();
+        this.studenId = null;
+        this.birthDate = null;
     }
 
     public Student(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status, String birthDate) {
@@ -23,7 +26,8 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "Student = " + super.toString() +
-               "birthDate='" + birthDate + '\'';
+        return "Student = " return "studentId" + super.toString() +
+                "birthDate='" + birthDate + '\'';
+
     }
 }
