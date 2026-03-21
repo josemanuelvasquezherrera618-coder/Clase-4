@@ -1,6 +1,6 @@
 package co.cesde.jose.models;
 
-public class Teacher extends Persons {
+public class Teacher extends Person {
 
     private long teacherId;
     public Teacher() {

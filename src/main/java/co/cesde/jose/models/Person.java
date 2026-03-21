@@ -1,6 +1,6 @@
 package co.cesde.jose.models;
 
-public abstract class Persons {
+public abstract class Person {
     protected Long userId;
     protected String code;
     protected String documentNumber;
@@ -21,10 +21,6 @@ public abstract class Persons {
         this.email = email;
         this.status = status;
     }
-
-    @Override
-    public abstract String getRole();
-    return "";
 
     public Long getUserId() {
         return userId;
